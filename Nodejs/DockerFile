@@ -1,0 +1,9 @@
+FROM node:slim 
+WORKDIR /learn/nodejs
+COPY . /learn/nodejs/
+RUN npm install 
+EXPOSE 3000
+CMD node index.js
+
+# docker login
+# docker build -t ryomenx/leaning-nodejs:0.0.1.RELEASE .
