@@ -2,7 +2,7 @@
 
 ## If you found this repo useful, give it a STAR 🌠
 
-You can watch the video version of this repo on my youtube playlist. -> https://www.youtube.com/watch?v=7JZP345yVjw&list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC
+You can watch the video version of this repo on youtube playlist. -> https://www.youtube.com/watch?v=7JZP345yVjw&list=PLdpzxOOAlwvLjb0vTD9BXLOwwLD_GWCmC
 
 
 ## What is a container ?
@@ -255,7 +255,6 @@ This message shows that your installation appears to be working correctly.
 ### Clone this repository and move to example folder
 
 ```
-git clone https://github.com/iam-veeramalla/Docker-Zero-to-Hero
 cd  examples
 ```
 
@@ -267,7 +266,7 @@ docker login
 
 ```
 Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
-Username: abhishekf5
+Username: repo_name
 Password:
 WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
 Configure a credential helper to remove this warning. See
@@ -281,7 +280,7 @@ Login Succeeded
 You need to change the username accoringly in the below command
 
 ```
-docker build -t abhishekf5/my-first-docker-image:latest .
+docker build -t repo_name/my-first-docker-image:latest .
 ```
 
 Output of the above command
@@ -311,7 +310,7 @@ Output of the above command
     Removing intermediate container 5d60ad3a59ff
      ---> 960d37536dcd
     Successfully built 960d37536dcd
-    Successfully tagged abhishekf5/my-first-docker-image:latest
+    Successfully tagged repo_name/my-first-docker-image:latest
 ```
 
 ### Verify Docker Image is created
@@ -324,7 +323,7 @@ Output
 
 ```
 REPOSITORY                         TAG       IMAGE ID       CREATED          SIZE
-abhishekf5/my-first-docker-image   latest    960d37536dcd   26 seconds ago   467MB
+repo_name/my-first-docker-image   latest    960d37536dcd   26 seconds ago   467MB
 ubuntu                             latest    58db3edaf2be   13 days ago      77.8MB
 hello-world                        latest    feb5d9fea6a5   16 months ago    13.3kB
 ```
@@ -332,7 +331,7 @@ hello-world                        latest    feb5d9fea6a5   16 months ago    13.
 ### Run your First Docker Container
 
 ```
-docker run -it abhishekf5/my-first-docker-image
+docker run -it repo_name/my-first-docker-image
 ```
 
 Output
@@ -344,14 +343,14 @@ Hello World
 ### Push the Image to DockerHub and share it with the world
 
 ```
-docker push abhishekf5/my-first-docker-image
+docker push repo_name/my-first-docker-image
 ```
 
 Output
 
 ```
 Using default tag: latest
-The push refers to repository [docker.io/abhishekf5/my-first-docker-image]
+The push refers to repository [docker.io/repo_name/my-first-docker-image]
 896818320e80: Pushed
 b8088c305a52: Pushed
 69dd4ccec1a0: Pushed
